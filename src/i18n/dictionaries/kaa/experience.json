@@ -1,0 +1,27 @@
+{
+  "heading": "Jumıs tájiriybe",
+  "items": {
+    "1": {
+      "company": "'Renesans Mikromoliya Tashkiloti' AJ",
+      "role": "Senior Backend Programmist",
+      "dateRange": "Avgust 2022 – Házirgi waqıt",
+      "bullets": [
+        "Bir neshe ishki bank sistemaların birden-bir interfeyske birlestirgen birden-bir korporativ web-sayt jaratdım",
+        "Barlıq bólimlerdegi 1000+ jumisshilar ushın kúndelik jumıs processlerin optimallastirdim",
+        "Arzadan tap shártnama tastıyıqlaniwina shekem bolǵan kredit ajıratıw processlerin avtomatlastirdim",
+        "Fayllardı almaslaw hám hújjetlerdi basqarıw modullerin islep shıqtım"
+      ]
+    },
+    "2": {
+      "company": "Fantom Studio LLC",
+      "role": "Fullstack Developer",
+      "dateRange": "Jul 2024 – Oct 2024",
+      "bullets": [
+        "Frontend maketlerin integraciya etip, quramalı backend logikasın jarattım",
+        "Texnologiyalar: PHP, Laravel, MariaDB, Websockets, Imagick, Blade templates",
+        "Docker hám Git járdeminde rawajlandırıw ortalıqları hám versiya qadaǵalawın basqardim.",
+        "GitHub Háreketler hám Docker konteynerleri arqalı CI/CD di basqardim."
+      ]
+    }
+  }
+}

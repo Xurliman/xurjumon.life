@@ -1,0 +1,10 @@
+{
+  "greeting": "Assalomu aleykum, men",
+  "firstName": "Xurliman",
+  "lastName": "Jumamuratova",
+  "shortName": "xurjumon",
+  "title": "Backend Dasturchi",
+  "bio": "Golang va PHP bo'yicha ixtisoslashgan backend-dasturchi sifatida, foydalanuvchi tajribasini birinchi o'ringa qo'yadigan ilg'or raqamli yechimlar yaratishga e'tibor qarataman. 4 yillik tajribaga ega bo'lib, men har bir loyihaga veb-ilovalarni birinchi marta yaratganimdagi kabi, ishtiyoq va javobgarchilik bilan yondashishni davom ettiraman, tez, qulay va ko'zga yoqimli natijalarni taqdim etaman.",
+  "location": "Boloniya, Italiya",
+  "status": "Takliflarga ochiqman"
+}

@@ -1,0 +1,27 @@
+{
+  "heading": "Experience",
+  "items": {
+    "1": {
+      "company": "'Renesans Mikromoliya Tashkiloti' JSC",
+      "role": "Senior Backend Developer",
+      "dateRange": "August 2022 – Present",
+      "bullets": [
+        "Built a unified corporate portal that integrates multiple internal banking systems into a single interface",
+        "Optimized daily operations for 1,000+ employees across all departments",
+        "Automated credit issuance processes from application to approval",
+        "Developed file-sharing and document management modules"
+      ]
+    },
+    "2": {
+      "company": "Fantom Studio LLC",
+      "role": "Fullstack Developer",
+      "dateRange": "Jul 2024 – Oct 2024",
+      "bullets": [
+        "Integrated front-end layouts and built complex back-end logic",
+        "Technologies: PHP, Laravel, MariaDB, Websockets, Imagick, Blade templates",
+        "Managed development environments and version control using Docker and Git.",
+        "Managed CI/CD via GitHub Actions and Docker containers"
+      ]
+    }
+  }
+}

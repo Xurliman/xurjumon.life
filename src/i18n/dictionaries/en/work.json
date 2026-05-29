@@ -1,0 +1,46 @@
+{
+  "heading": "Works",
+  "subtitle": "Some of the noteworthy projects I have built:",
+  "items": {
+    "1": {
+      "title": "Core Banking System (CBS)",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Built the full loan lifecycle engine: origination, multi-step approvals, contract issuance, repayment schedules, interest accrual, and penalty management. Implemented a double-entry accounting engine powering balance sheets, general ledger, and turnover reports. Integrated 4 government regulatory APIs (KATM, CRIF, GRKI, MyID) for KYC/AML compliance. Designed distributed workflow orchestration with Temporal.io and real-time notifications via WebSocket, Web Push, and Firebase FCM."
+    },
+    "2": {
+      "title": "CBS Data Migration Engine",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Engineered a high-throughput migration pipeline processing ~40M transactions, 1.5M balance accounts, and 74K+ loan contracts from legacy MSSQL to modern PostgreSQL with full data integrity validation. Built concurrent ETL pipelines in Go using goroutine-based patterns with batch optimization, enabling the full migration as a single coordinated process. Preserved double-entry ledger consistency with automated reconciliation across a hierarchical chart of accounts."
+    },
+    "3": {
+      "title": "Nobank CRM",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Replaced a legacy Excel-based loan system with a full-stack microfinance platform, digitizing the entire lending workflow across multiple branches. Engineered a financial calculation engine with annuity and differential methods, grace periods, and daily interest computation. Automated regulatory document generation (contracts, collateral forms, schedules) as Word/PDF — eliminating manual paperwork. Scaled with RBAC, full audit trails, branch-level data isolation, and real-time Telegram notifications."
+    },
+    "4": {
+      "title": "Gopher Market",
+      "role": "Senior Backend Developer - Yandex Praktikum",
+      "description": "Engineered a loyalty rewards and order management platform in Go with clean architecture and precise decimal arithmetic for financial calculations. Implemented Temporal-based workflow orchestration for async order processing with fault tolerance. Deployed a full observability stack (Prometheus, Grafana, ELK) alongside PostgreSQL, managed via Docker Compose with Nginx reverse proxy."
+    },
+    "5": {
+      "title": "Metrics Alert System",
+      "role": "Senior Backend Developer - Yandex Praktikum",
+      "description": "Engineered a high-throughput metrics collection and alerting platform with dual-transport architecture (REST + gRPC) and layered security — RSA-OAEP encryption, HMAC-SHA256 signing, and IP-based subnet ACL. Designed concurrent data ingestion with configurable worker pools supporting 30+ runtime and system-level metrics with graceful degradation under load. Implemented a flexible storage layer with PostgreSQL and in-memory backends enabling zero-downtime backend switching."
+    },
+    "6": {
+      "title": "Corporate WebApp",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Built a full-stack microfinance platform with REST API backend, admin dashboard, and Telegram bot integration serving 4 languages. Designed a configurable credit product management system enabling business teams to manage loan offerings without developer intervention. Architected a two-way Telegram bot for customer complaint resolution and HR resume intake using conversation state machines. Applied DDD with Action/DTO patterns across 16 bounded domains."
+    },
+    "7": {
+      "title": "B2B SaaS Visual Commerce Platform",
+      "role": "Fullstack Developer — Fantom Studio",
+      "description": "Built a B2B SaaS product configurator with real-time order management, snapshot pricing, and automated PDF quote generation — handling the complete order lifecycle with email notifications. Developed a server-side image compositing engine for real-time visual product configuration with layered rendering — directly driving conversion and reducing return rates. Architected a SaaS licensing and OTA content delivery system with zero-downtime updates across client deployments."
+    },
+    "8": {
+      "title": "B2B SaaS License Management Platform",
+      "role": "Fullstack Developer — Fantom Studio",
+      "description": "Built a secure RESTful API for real-time license validation and automated software update distribution with chunked file streaming, serving multi-tenant client stores. Implemented automated license lifecycle management with scheduled expiry enforcement, RBAC, and two-factor authentication for compliance. Containerized with Docker (PHP-FPM + Nginx + MariaDB) enabling reproducible deployments and environment parity."
+    }
+  }
+}

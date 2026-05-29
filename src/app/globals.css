@@ -1,0 +1,449 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------------------------------------------------------------------------
+ * Locale-driven accent palettes.
+ *
+ * --a1-* = accent 1 (the "amber" role, used for primary brand colour, badges,
+ *          highlights). --a2-* = accent 2 (the "green" role, used for
+ *          secondary highlights, gradient stops, status dots).
+ *
+ * We override Tailwind's built-in `amber` and `green` palettes to read from
+ * these variables, so existing utility classes (`bg-amber-500`,
+ * `dark:text-green-400`, etc.) shift colour as the locale changes.
+ *
+ * Per-locale palettes are scoped to `:root[lang="<code>"]`. The LocaleProvider
+ * keeps `<html>` lang attribute in sync, so flipping the language flips the
+ * theme.
+ * --------------------------------------------------------------------------*/
+
+:root,
+:root[lang="en"] {
+  /* UK flag navy (#012169) */
+  --a1-50: #e6eaf3;
+  --a1-100: #c0cae0;
+  --a1-200: #94a4c9;
+  --a1-300: #647eb1;
+  --a1-400: #38609d;
+  --a1-500: #012169;
+  --a1-600: #011d5d;
+  --a1-700: #01184e;
+  --a1-800: #01133e;
+  --a1-900: #000d2c;
+  --a1-950: #000617;
+  /* UK flag red (#C8102E) */
+  --a2-50: #fbe4e8;
+  --a2-100: #f5bcc4;
+  --a2-200: #ee8f9c;
+  --a2-300: #e76174;
+  --a2-400: #de3a52;
+  --a2-500: #c8102e;
+  --a2-600: #ae0e28;
+  --a2-700: #8f0b21;
+  --a2-800: #71091a;
+  --a2-900: #560712;
+  --a2-950: #2c0309;
+}
+
+:root[lang="uz"] {
+  /* Sky blue (Uzbek flag top stripe) */
+  --a1-50: #e0f5fa;
+  --a1-100: #b8e6f0;
+  --a1-200: #87d3e3;
+  --a1-300: #51bfd6;
+  --a1-400: #1eaecb;
+  --a1-500: #0099b5;
+  --a1-600: #007e96;
+  --a1-700: #006377;
+  --a1-800: #004b5b;
+  --a1-900: #003543;
+  --a1-950: #001a22;
+  /* Flag green */
+  --a2-50: #e7f7eb;
+  --a2-100: #c4edcd;
+  --a2-200: #98e0a8;
+  --a2-300: #66d17e;
+  --a2-400: #38c358;
+  --a2-500: #1eb53a;
+  --a2-600: #189931;
+  --a2-700: #117a26;
+  --a2-800: #0c5d1c;
+  --a2-900: #084214;
+  --a2-950: #032309;
+}
+
+:root[lang="ru"] {
+  /* Russian flag blue */
+  --a1-50: #e6ecf6;
+  --a1-100: #c4d2ed;
+  --a1-200: #95aedf;
+  --a1-300: #6489d0;
+  --a1-400: #3565be;
+  --a1-500: #0039a6;
+  --a1-600: #003393;
+  --a1-700: #002b7d;
+  --a1-800: #002367;
+  --a1-900: #001a4d;
+  --a1-950: #000d29;
+  /* Russian flag red */
+  --a2-50: #fce8e6;
+  --a2-100: #f6c2bc;
+  --a2-200: #f0998f;
+  --a2-300: #e87263;
+  --a2-400: #df4f3c;
+  --a2-500: #d52b1e;
+  --a2-600: #b62318;
+  --a2-700: #951c13;
+  --a2-800: #75150e;
+  --a2-900: #570f0a;
+  --a2-950: #2d0805;
+}
+
+:root[lang="kaa"] {
+  /* Karakalpakstan flag blue (top stripe) */
+  --a1-50: #e1f0fb;
+  --a1-100: #b8d9f4;
+  --a1-200: #85bfeb;
+  --a1-300: #4ea4e1;
+  --a1-400: #218cd6;
+  --a1-500: #0072ce;
+  --a1-600: #005fb0;
+  --a1-700: #004d8f;
+  --a1-800: #003c70;
+  --a1-900: #002b51;
+  --a1-950: #00152a;
+  /* Karakalpakstan flag gold (middle stripe) */
+  --a2-50: #fffbe0;
+  --a2-100: #fff5b8;
+  --a2-200: #ffec85;
+  --a2-300: #ffe24e;
+  --a2-400: #ffda22;
+  --a2-500: #ffd700;
+  --a2-600: #d4b300;
+  --a2-700: #a78d00;
+  --a2-800: #7a6700;
+  --a2-900: #524500;
+  --a2-950: #2a2300;
+}
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --color-gray-950: #030712;
+  --color-gray-900: #111827;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-300: #d1d5db;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
+
+  /* Map Tailwind's amber palette to accent 1 */
+  --color-amber-50: var(--a1-50);
+  --color-amber-100: var(--a1-100);
+  --color-amber-200: var(--a1-200);
+  --color-amber-300: var(--a1-300);
+  --color-amber-400: var(--a1-400);
+  --color-amber-500: var(--a1-500);
+  --color-amber-600: var(--a1-600);
+  --color-amber-700: var(--a1-700);
+  --color-amber-800: var(--a1-800);
+  --color-amber-900: var(--a1-900);
+  --color-amber-950: var(--a1-950);
+
+  /* Map Tailwind's green palette to accent 2 */
+  --color-green-50: var(--a2-50);
+  --color-green-100: var(--a2-100);
+  --color-green-200: var(--a2-200);
+  --color-green-300: var(--a2-300);
+  --color-green-400: var(--a2-400);
+  --color-green-500: var(--a2-500);
+  --color-green-600: var(--a2-600);
+  --color-green-700: var(--a2-700);
+  --color-green-800: var(--a2-800);
+  --color-green-900: var(--a2-900);
+  --color-green-950: var(--a2-950);
+}
+
+/* Smooth crossfade for accent shifts. Sits in @layer base so explicit
+ * Tailwind transition utilities (e.g. `transition-colors`) still win for
+ * fast hover effects. */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    transition-property: background-color, color, border-color, fill, stroke,
+      box-shadow, outline-color, text-decoration-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient text now follows the active accents */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--a1-600),
+    var(--a1-700),
+    var(--a2-700)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--a1-400),
+    var(--a1-500),
+    var(--a2-400)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow {
+  box-shadow: 0 0 40px color-mix(in oklab, var(--a1-500) 20%, transparent),
+    0 0 80px color-mix(in oklab, var(--a2-700) 12%, transparent);
+}
+
+.dark .glow {
+  box-shadow: 0 0 40px color-mix(in oklab, var(--a1-400) 15%, transparent),
+    0 0 80px color-mix(in oklab, var(--a2-400) 10%, transparent);
+}
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+}
+
+.dark .hero-glow {
+  opacity: 0.12;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Rotating profile-ring gradient — uses live accents */
+.profile-ring {
+  background: conic-gradient(
+    from 0deg,
+    var(--a1-500),
+    var(--a2-700),
+    var(--a1-300),
+    var(--a1-500)
+  );
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--a1-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--a1-500), var(--a2-700));
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--color-gray-900);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--a1-600), var(--a2-800));
+  border-radius: 9999px;
+}
+
+/* Rendered Markdown (blog posts) */
+.markdown-body p {
+  margin-bottom: 1.25rem;
+}
+
+.markdown-body h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  letter-spacing: -0.01em;
+}
+
+.dark .markdown-body h2 {
+  color: var(--color-gray-100);
+}
+
+.markdown-body h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.dark .markdown-body h3 {
+  color: var(--color-gray-100);
+}
+
+.markdown-body a {
+  color: var(--a1-700);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--a1-700) 40%, transparent);
+  text-underline-offset: 3px;
+}
+
+.markdown-body a:hover {
+  text-decoration-color: var(--a1-700);
+}
+
+.dark .markdown-body a {
+  color: var(--a1-400);
+  text-decoration-color: color-mix(in oklab, var(--a1-400) 40%, transparent);
+}
+
+.dark .markdown-body a:hover {
+  text-decoration-color: var(--a1-400);
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0 0 1.25rem 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+}
+
+.markdown-body li {
+  margin-bottom: 0.4rem;
+}
+
+.markdown-body blockquote {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 3px solid var(--a1-500);
+  background: color-mix(in oklab, var(--a1-500) 6%, transparent);
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: var(--color-gray-600);
+  font-style: italic;
+}
+
+.dark .markdown-body blockquote {
+  color: var(--color-gray-300);
+  background: color-mix(in oklab, var(--a1-400) 10%, transparent);
+}
+
+.markdown-body code {
+  padding: 0.15rem 0.4rem;
+  background: var(--color-gray-100);
+  color: var(--a2-700);
+  border-radius: 0.3rem;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.dark .markdown-body code {
+  background: var(--color-gray-800);
+  color: var(--a2-300);
+}
+
+.markdown-body pre {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.markdown-body pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.dark .markdown-body hr {
+  border-color: var(--color-gray-800);
+}
+
+.markdown-body img {
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown-body table {
+  margin: 1.5rem 0;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-gray-200);
+  text-align: left;
+}
+
+.dark .markdown-body th,
+.dark .markdown-body td {
+  border-color: var(--color-gray-800);
+}
+
+.markdown-body th {
+  background: var(--color-gray-100);
+  font-weight: 600;
+}
+
+.dark .markdown-body th {
+  background: var(--color-gray-800);
+}

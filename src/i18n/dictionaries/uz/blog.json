@@ -1,0 +1,36 @@
+{
+  "heading": "Blog",
+  "subtitle": "Thoughts, tutorials, and insights from my development journey.",
+  "viewAll": "View all posts",
+  "backToBlog": "Back to blog",
+  "items": {
+    "1": {
+      "title": "Building Scalable APIs with Golang",
+      "excerpt": "Learn how to design and build high-performance REST APIs using Go, covering routing, middleware, and database integration.",
+      "content": "Go has become one of the most popular languages for building backend services, and for good reason. Its simplicity, performance, and built-in concurrency make it an excellent choice for building scalable APIs.\n\nIn this post, we'll walk through the key concepts of building a production-ready API with Go.\n\n## Setting Up the Project\n\nFirst, initialize your Go module and install the necessary dependencies. We'll use the standard library's net/http package along with a lightweight router.\n\n## Routing and Middleware\n\nGo's standard library provides everything you need for HTTP routing, but using a router like chi or gorilla/mux can make your life easier. Middleware functions let you handle concerns like logging, authentication, and CORS in a clean, composable way.\n\n## Database Integration\n\nFor database access, we'll use sqlx which provides a set of extensions on top of Go's standard database/sql package. This gives us named parameters, automatic struct scanning, and more.\n\n## Error Handling\n\nProper error handling is crucial in any API. Go's explicit error handling pattern makes it easy to handle errors consistently across your application.\n\n## Conclusion\n\nGo's simplicity and performance make it an excellent choice for building APIs. The strong standard library means you can build production-ready services with minimal dependencies.",
+      "readingTime": "8 min read",
+      "tags": ["Golang", "API", "Backend"]
+    },
+    "2": {
+      "title": "Modern PHP: Best Practices in 2025",
+      "excerpt": "PHP has evolved significantly. Explore the latest features, patterns, and tools that make PHP a modern, powerful language.",
+      "content": "PHP has come a long way from its early days. With PHP 8.3 and beyond, the language offers features that rival many modern languages. Let's explore what makes PHP great in 2025.\n\n## Type System Improvements\n\nPHP's type system has matured significantly. With union types, intersection types, enums, and readonly properties, you can write much safer code than before.\n\n## Fibers and Async\n\nPHP 8.1 introduced Fibers, enabling cooperative multitasking. Libraries like AMPHP and ReactPHP leverage this for truly asynchronous PHP applications.\n\n## Modern Frameworks\n\nLaravel continues to innovate with features like Octane for high-performance serving, while Symfony provides rock-solid components for enterprise applications.\n\n## Static Analysis\n\nTools like PHPStan and Psalm can catch bugs before runtime, making PHP development much safer and more productive.\n\n## Conclusion\n\nModern PHP is a far cry from the PHP of old. With strong typing, async capabilities, and excellent tooling, it's a great choice for building robust applications.",
+      "readingTime": "6 min read",
+      "tags": ["PHP", "Backend", "Best Practices"]
+    },
+    "3": {
+      "title": "Docker for Backend Developers: A Practical Guide",
+      "excerpt": "Master Docker from a backend perspective — containers, compose, networking, and production deployment strategies.",
+      "content": "Docker has become an essential tool in every backend developer's toolkit. It solves the \"works on my machine\" problem and makes deployment consistent and reproducible.\n\n## Why Docker?\n\nContainers package your application with all its dependencies, ensuring it runs the same way everywhere — from your laptop to production servers.\n\n## Dockerfile Best Practices\n\nA well-written Dockerfile can significantly reduce image size and build time. Use multi-stage builds, minimize layers, and leverage build cache effectively.\n\n## Docker Compose for Development\n\nDocker Compose lets you define multi-container applications. Your API, database, cache, and message queue can all be defined in a single docker-compose.yml file.\n\n## Networking\n\nUnderstanding Docker networking is key to building microservice architectures. Bridge networks, overlay networks, and service discovery all play important roles.\n\n## Production Considerations\n\nIn production, consider using orchestration tools like Kubernetes or Docker Swarm. Implement health checks, resource limits, and proper logging.\n\n## Conclusion\n\nDocker simplifies development and deployment workflows. Mastering it will make you a more effective backend developer.",
+      "readingTime": "10 min read",
+      "tags": ["Docker", "DevOps", "Backend"]
+    },
+    "4": {
+      "title": "Database Optimization Techniques Every Developer Should Know",
+      "excerpt": "From indexing strategies to query optimization — practical tips to make your database queries blazing fast.",
+      "content": "Slow database queries are one of the most common performance bottlenecks in web applications. Let's explore practical techniques to optimize your database performance.\n\n## Indexing Strategies\n\nIndexes are the most powerful tool for query optimization. Understanding when and how to create indexes can dramatically improve query performance.\n\n## Query Analysis\n\nUse EXPLAIN/ANALYZE to understand how your database executes queries. This reveals full table scans, missing indexes, and suboptimal join orders.\n\n## Connection Pooling\n\nOpening database connections is expensive. Connection pooling reuses existing connections, reducing latency and resource consumption.\n\n## Caching Strategies\n\nNot every request needs to hit the database. Implement caching at multiple levels — application cache, query cache, and CDN cache for read-heavy workloads.\n\n## Normalization vs Denormalization\n\nWhile normalization reduces data redundancy, strategic denormalization can significantly improve read performance for specific use cases.\n\n## Conclusion\n\nDatabase optimization is both an art and a science. Start with proper indexing, analyze your queries, and layer in caching where it makes sense.",
+      "readingTime": "7 min read",
+      "tags": ["Database", "Performance", "Backend"]
+    }
+  }
+}

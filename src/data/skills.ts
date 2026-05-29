@@ -1,0 +1,38 @@
+import type { Skill } from "@/types";
+import {
+    SiJavascript,
+    SiTypescript,
+    SiReact,
+    SiNextdotjs,
+    SiNodedotjs,
+    SiExpress,
+    SiNestjs,
+    SiSocketdotio,
+    SiPostgresql,
+    SiMongodb,
+    SiSass,
+    SiTailwindcss,
+    SiFigma,
+    SiCypress,
+    SiStorybook,
+    SiGit, SiGoland, SiPhp, SiTemporal, SiLinux, SiDocker, SiKubernetes, SiMysql, SiTrpc,
+} from "react-icons/si";
+
+export const skills: Skill[] = [
+  { name: "Golang", icon: SiGoland },
+  { name: "PHP", icon: SiPhp },
+  { name: "Temporal", icon: SiTemporal },
+  { name: "gRPC", icon: SiTrpc },
+  { name: "Linux", icon: SiLinux },
+  { name: "Kubernetes", icon: SiKubernetes },
+  { name: "Docker", icon: SiDocker },
+  { name: "MySQL", icon: SiMysql },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "Sass/Scss", icon: SiSass },
+  { name: "Tailwindcss", icon: SiTailwindcss },
+  { name: "Figma", icon: SiFigma },
+  { name: "Cypress", icon: SiCypress },
+  { name: "Storybook", icon: SiStorybook },
+  { name: "Git", icon: SiGit },
+];

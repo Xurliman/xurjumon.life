@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "about": "Haqimda",
+    "experience": "Tajriba",
+    "work": "Proektlarim",
+    "blog": "Blog",
+    "contact": "Aloqa"
+  },
+  "buttons": {
+    "downloadCv": "CV",
+    "source": "Manba",
+    "live": "Live",
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "language": "Til"
+  },
+  "skills": {
+    "heading": "Ko'nikmalar",
+    "subtitle": "Men haqiqatan ham yaxshi bo'lgan ko'nikmalar, asbob-uskunalar va texnologiyalar:"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan."
+  },
+  "blog": {
+    "metaTitle": "Blog | xurjumon",
+    "metaDescription": "Rivojlantirish yo'limdagi fikrlar, qo'llanmalar va mulohazalar bilan bo'lishib boraman."
+  }
+}

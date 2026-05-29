@@ -1,0 +1,46 @@
+{
+  "heading": "Proyektler",
+  "subtitle": "Men jaratqan ayırım itibarǵa iyelik etiw joybarlar:",
+  "items": {
+    "1": {
+      "title": "Core Banking System (CBS)",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Pútkil kredit ómircycle ni basqarıw sistemasın islep shıqtım :kredit ajıratıw, kóp basqıshlı tastıyıqlaw, shártnama qol qoyıw, tólew kesteari, procent esap-kitap hám shtraflardı basqarıw. Óz-ara buxgalteriya esabı mexanizm, atap aytqanda balanslar, ulıwma buxgalteriya dápter hám aylanba esapları engizildi. KYC/AML talaplarına sáykeslikti támiyinlew ushın húkimet tártipke salıwshı API-ları (KATM, CRIF, GRKI, MyID ) integraciya etildi. Temporal.io hám VebSocket, Veb Puwsh hám de Firebase FCM arqalı real waqıtlı bildiriw xatılar járdeminde tarqatılǵan jumıs processleri dúzildi."
+    },
+    "2": {
+      "title": "CBS Data Migration Engine",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Shama menen 40 million tranzaksiya, 1.5 million esap-nomer hám 74,000 den artıq kredit shártnamaların qayta isleytuǵın joqarı ónimli migraciya trubanı islep shıqtım, maǵlıwmatlardı gónergen MSSQL maǵlıwmatlar bazadan zamanagóy PostgreSQL maǵlıwmatlar bazasına tolıq maǵlıwmat Bir pútinlik tekseriwleri menen kóshiriwdi ámelge asırdım. Go tilinde gorutinalarga tiykarlanǵan naǵıslar hám partiya boyınsha qayta islewdi optimallastırıw arqalı parallel ETL trubaların jarattı, bul bolsa tolıq migraciyanı bir Muwapıqlastırılǵan processte ámelge asırıwǵa múmkinshilik berdi. Eki tabıs-shıǵın buxgalteriyasınıń izbe-izligin ierarxik esaplar kestege avtomatikalıq Muwapıqlastırıw arqalı támiyinledim. "
+    },
+    "3": {
+      "title": "Nobank CRM",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Gónergen Excel negizindegi kreditlew sistemasın bir neshe filial boylap pútkil kreditlew procesin nomerlewtiruvchi tolıq Mikrofinanslıq platforma menen almastırdı. Annuitet hám differencial usıllar, jeńillikli dáwirler hám kúnlik procent esabın qollaǵan halda finanslıq esap-kitaplardı ámelge asırıw mexanizm islep shıǵıldı. Word/PDF formatında tártipke salıwshı hújjetlerdi ( shártnamalar, qosımsha sırtqı kórinisler, kesteler) avtomatikalıq jaratıwdı jolǵa qoyıw arqalı qolda qaǵaz islew zárúrligin joq etdi. RBAC, tolıq audit iz, filial dárejesinde maǵlıwmatlardı ajıratıw hám Telegram'dagi real waqıtlı bildiriw xatılar sebepli keńeytiletuǵın."
+    },
+    "4": {
+      "title": "Gopher Market",
+      "role": "Senior Backend Developer",
+      "description": "Go programmalastırıw tilinde sap mikroservis arxitekturası hám finanslıq esap-kitaplar ushın anıq onlıq arifmetika járdeminde sadıqlıq sıylıqları hám buyırtpa basqarıw platforması islep shıǵıldı. Qáteliklerge shıdamlılıq menen Asinxron buyırtpa qayta islew ushın waqıtqa tiykarlanǵan jumıs procesi engizildi. Tolıq suwservability dásteck ( Sawdaetheus, Qanana, ELK) PostgreSQL menen birge, Nginx Reverse proxy járdeminde Docker Compose arqalı basqarılatuǵın halda jaylastırıldı."
+    },
+    "5": {
+      "title": "Metrics Alert System",
+      "role": "Senior Backend Developer",
+      "description": "Kórsetkishlerdi jıynaw hám eskertiw ushın joqarı ónimli platforma islep shıǵıldı, eki transportlı arxitektura ( REST + gRPC) hám kóp dárejeli qawipsizlik-RSA-OAEP shifrlaw, HMAC-SHA256 qol qoyıw hám de IP-negizindegi subtorma kirisiw qadaǵalaw dizimi menen. Júk astında tegis islewdi keńeytiw imkaniyatın beretuǵın, 30 den artıq atqarıw hám sistema dárejesindegi metrlikalarni qollap-quwatlaytuǵın sazlanatuǵın jumısshı basseynlerinen paydalanǵan halda parallel maǵlıwmatlardı qabıllawdı islep shıqtım. PostgreSQL hám yad ishindegi server sistemalarınan paydalanǵan halda maslasıwshı maǵlıwmatlar saqlaw qatlamın engizedim, bul bolsa server sistemasın úzilislersiz almastırıw imkaniyatın beredi. "
+    },
+    "6": {
+      "title": "Corporate WebApp",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Tolıq funksional mikro finans platforması REST API interfeysi, adminin paneli hám Telegram baǵı menen, 4 tilde isleytuǵın halda jaratıldı. Islep shıǵıwshısız kredit ónimlerin basqarıwdı biznes komandalarına múmkinshilik jaratıwshı ózlestiriletuǵın kredit ónimlerin basqarıw sisteması islep shıǵıldı. Klient shaǵımların kórip shıǵıw hám HR xızmetkerlerinen CV qabıllaw ushın dialog jaǵdayları mashinalarınan paydalanǵan halda óz-ara Telegram bot islep shıqtım. 16 ta shegaralanǵan domen boylap astion/DTO naǵısları menen DDKúnler qollaedim."
+    },
+    "7": {
+      "title": "B2B SaaS Visual Commerce Platform",
+      "role": "Fullstack Developer — Fantom Studio",
+      "description": "Real waqıtta buyırtpa basqarıw, Shapshot bahalaw hám PDF mirátnamaların avtomatikalıq jaratıw múmkinshiligine iye B2 B SaaS ónim konfiguratorini jarattım, bul tolıq buyırtpa turmıslıq ciklın elektron pochta bildiriw xatıları menen támiyinleydi. Kóp dárejeli Renderlash menen real waqıtta vizual ónimdi maslastırıw ushın server tárepindegi súwret kompoziciyası modulin islep shıqtı, bul konverciya dárejesine tikkeley tásir etedi hám qaytarıw dárejesin azaytadı. Klientlerdiń sistemanı toqtatmasdan jańarıwların támiyinleytuǵın SaaS licenziyalaw sisteması hám OTA kántent jetkiziwdi islep shıqtı."
+    },
+    "8": {
+      "title": "B2B SaaS License Management Platform",
+      "role": "Fullstack Developer — Fantom Studio",
+      "description": "Kóp kireyshili klient skladlarına xizmet kórsetiw ushın ushınked fayl aǵısı járdeminde real waqıtta licenziyanı tastıyıqlaw hám programmalıq támiynattı avtomatikalıq jańalawdı tarqatıw ushın qawipsiz RESTful API jaratıldı. Joybarlastırılǵan múddet tawısıwı, RBAC hám eki faktorlı autentifikaciyadan paydalanǵan halda litsenziya turmıslıq ciklın avtomatlastırılǵan basqarıwdı ámeldegi etti, bul sáykeslikti támiyinleydi. Docker ( PHP-FPM + Nginx + MariaDB) járdeminde Konteynerlestiriw ámelge asırıldı, bul bolsa tákirarlanatuǵın jaylastırıw hám ortalıq paritetti támiyinleydi."
+    }
+  }
+}

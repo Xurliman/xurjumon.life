@@ -1,0 +1,46 @@
+{
+  "heading": "Proyektlar",
+  "subtitle": "Men yaratgan ba'zi e'tiborga molik loyihalar:",
+  "items": {
+    "1": {
+      "title": "Core Banking System (CBS)",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Butun kredit lifecycle ni boshqarish tizimini ishlab chiqdim: kredit ajratish, ko'p bosqichli tasdiqlash, shartnoma imzolash, to'lov jadvalari, foiz hisob-kitobi va jarimalarni boshqarish. Ikki tomonlama buxgalteriya hisobi mexanizmi, jumladan balanslar, umumiy buxgalteriya daftari va aylanma hisobotlari joriy etildi. KYC/AML talablariga muvofiqlikni ta'minlash uchun hukumat tartibga soluvchi API-lari (KATM, CRIF, GRKI, MyID) integratsiya qilindi. Temporal.io va WebSocket, Web Push hamda Firebase FCM orqali real vaqtli bildirishnomalar yordamida tarqatilgan ish jarayonlari tashkil etildi."
+    },
+    "2": {
+      "title": "CBS Data Migration Engine",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Taxminan 40 million tranzaksiya, 1.5 million hisob-raqam va 74,000 dan ortiq kredit shartnomalarini qayta ishlaydigan yuqori unumdor migratsiya quvurini ishlab chiqdim, ma'lumotlarni eskirgan MSSQL ma'lumotlar bazasidan zamonaviy PostgreSQL ma'lumotlar bazasiga to'liq ma'lumot yaxlitligi tekshiruvlari bilan ko'chirishni amalga oshirdim. Go tilida gorutinalarga asoslangan naqshlar va partiya bo'yicha ishlov berishni optimallashtirish orqali parallel ETL quvurlarini yaratdi, bu esa to'liq migratsiyani bitta muvofiqlashtirilgan jarayonda amalga oshirishga imkon berdi. Ikkita kirim-chiqim buxgalteriyasining izchilligini ierarxik hisoblar jadvaliga avtomatik muvofiqlashtirish orqali ta'minladim."
+    },
+    "3": {
+      "title": "Nobank CRM",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "Eskirgan Excel asosidagi kreditlash tizimini bir nechta filial bo'ylab butun kreditlash jarayonini raqamlashtiruvchi to'liq mikromoliyaviy platforma bilan almashtirdi. Annuitet va differensial usullar, imtiyozli davrlar va kunlik foiz hisobini qo'llagan holda moliyaviy hisob-kitoblarni amalga oshirish mexanizmi ishlab chiqildi. Word/PDF formatida tartibga soluvchi hujjatlarni (shartnomalar, qo'shimcha shakllar, jadvallar) avtomatik yaratishni yo'lga qo'yish orqali qo'lda qog'oz ishlash zaruratini yo'q qildi. RBAC, to'liq audit izi, filial darajasida ma'lumotlarni ajratish va Telegram'dagi real vaqtli bildirishnomalar tufayli kengaytiriladigan."
+    },
+    "4": {
+      "title": "Gopher Market",
+      "role": "Senior Backend Developer",
+      "description": "Go dasturlash tilida sof mikroservis arxitekturasi va moliyaviy hisob-kitoblar uchun aniq o'nlik arifmetika yordamida sodiqlik mukofotlari va buyurtma boshqaruvi platformasi ishlab chiqildi. Xatoliklarga chidamlilik bilan asinxron buyurtma qayta ishlash uchun vaqtga asoslangan ish jarayoni joriy etildi. To'liq observability stack (Prometheus, Grafana, ELK) PostgreSQL bilan birga, Nginx reverse proxy yordamida Docker Compose orqali boshqariladigan holda joylashtirildi."
+    },
+    "5": {
+      "title": "Metrics Alert System",
+      "role": "Senior Backend Developer",
+      "description": "Ko'rsatkichlarni yig'ish va ogohlantirish uchun yuqori unumdor platforma ishlab chiqildi, ikki transportli arxitektura (REST + gRPC) va ko'p darajali xavfsizlik – RSA-OAEP shifrlash, HMAC-SHA256 imzolash hamda IP-asosidagi subtorma kirish nazorat ro'yxati bilan. Yuk ostida silliq ishlashni kengaytirish imkonini beruvchi, 30 dan ortiq ijro va tizim darajasidagi metrikalarni qo'llab-quvvatlaydigan sozlanadigan ishchi havzalaridan foydalangan holda parallel ma'lumotlarni qabul qilishni ishlab chiqdim. PostgreSQL va xotira ichidagi server tizimlaridan foydalangan holda moslashuvchan ma'lumotlar saqlash qatlamini joriy qildim, bu esa server tizimini uzilishlarsiz almashtirish imkonini beradi."
+    },
+    "6": {
+      "title": "Corporate WebApp",
+      "role": "Senior Backend Developer — Renesans Microfinance",
+      "description": "To'liq funksional mikro moliya platformasi REST API interfeysi, admin paneli va Telegram boti bilan, 4 tilda ishlaydigan holda yaratildi. Ishlab chiquvchisiz kredit mahsulotlarini boshqarishni biznes jamoalariga imkon beruvchi moslashtiriladigan kredit mahsulotlarini boshqarish tizimi ishlab chiqildi. Mijoz shikoyatlarini ko'rib chiqish va HR xodimlaridan CV qabul qilish uchun dialog holatlari mashinalaridan foydalangan holda ikki tomonlama Telegram bot ishlab chiqdim. 16 ta chegaralangan domen bo'ylab action/DTO naqshlari bilan DDDni qo'lladim."
+    },
+    "7": {
+      "title": "B2B SaaS Visual Commerce Platform",
+      "role": "Fullstack Developer — Fantom Studio",
+      "description": "Real vaqtda buyurtma boshqaruvi, snapshot narxlash va PDF taklifnomalarini avtomatik yaratish imkoniyatiga ega B2B SaaS mahsulot konfiguratorini yaratdim, bu to'liq buyurtma hayotiy tsiklini elektron pochta bildirishnomalari bilan ta'minlaydi. Ko'p darajali renderlash bilan real vaqtda vizual mahsulotni moslashtirish uchun server tomonidagi rasm kompozitsiyasi modulini ishlab chiqdi, bu konversiya darajasiga bevosita ta'sir qiladi va qaytarish darajasini kamaytiradi. Mijozlarning tizimni to'xtatmasdan yangilashlarini ta'minlovchi SaaS litsenziyalash tizimi va OTA kontent yetkazib berishni ishlab chiqdi."
+    },
+    "8": {
+      "title": "B2B SaaS License Management Platform",
+      "role": "Fullstack Developer — Fantom Studio",
+      "description": "Ko'p ijarachili mijoz omborlariga xizmat ko'rsatish uchun chunked fayl oqimi yordamida real vaqtda litsenziyani tasdiqlash va dasturiy ta'minotni avtomatik yangilashni tarqatish uchun xavfsiz RESTful API yaratildi. Rejalashtirilgan muddat tugashi, RBAC va ikki omilli autentifikatsiyadan foydalangan holda litsenziya hayotiy tsiklini avtomatlashtirilgan boshqaruvni joriy etdi, bu muvofiqlikni ta'minlaydi. Docker (PHP-FPM + Nginx + MariaDB) yordamida konteynerlashtirish amalga oshirildi, bu esa takrorlanadigan joylashtirish va muhit paritetini ta'minlaydi."
+    }
+  }
+}

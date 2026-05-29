@@ -1,0 +1,27 @@
+{
+  "heading": "Ish tajriba",
+  "items": {
+    "1": {
+      "company": "'Renesans Mikromoliya Tashkiloti' AJ",
+      "role": "Senior Backend Dasturchi",
+      "dateRange": "Avgust 2022 – Hozirgi vaqt",
+      "bullets": [
+        "Bir nechta ichki bank tizimlarini yagona interfeysga birlashtirgan yagona korporativ website yaratdim",
+        "Barcha bo'limlardagi 1000+ xodim uchun kundalik ish jarayonlarini optimallashtirdim",
+        "Arizadan to shartnoma tasdiqlnishigacha bo'lgan kredit ajratish jarayonlarini avtomatlashtirdim",
+        "Fayllarni almashish va hujjatlarni boshqarish modullarini ishlab chiqdim"
+      ]
+    },
+    "2": {
+      "company": "Fantom Studio LLC",
+      "role": "Fullstack Developer",
+      "dateRange": "Jul 2024 – Oct 2024",
+      "bullets": [
+        "Front-end maketlarini integratsiya qilib, murakkab back-end mantiqini yaratdim",
+        "Texnologiyalar: PHP, Laravel, MariaDB, Websockets, Imagick, Blade shablonlari",
+        "Docker va Git yordamida rivojlantirish muhitlari va versiya nazoratini boshqardim.",
+        "GitHub Actions va Docker konteynerlari orqali CI/CD ni boshqardim"
+      ]
+    }
+  }
+}

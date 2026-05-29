@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Works",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "downloadCv": "CV",
+    "source": "Source",
+    "live": "Live",
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "language": "Language"
+  },
+  "skills": {
+    "heading": "Skills",
+    "subtitle": "The skills, tools and technologies I am really good at:"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "blog": {
+    "metaTitle": "Blog | xurjumon",
+    "metaDescription": "Thoughts, tutorials, and insights from my development journey."
+  }
+}

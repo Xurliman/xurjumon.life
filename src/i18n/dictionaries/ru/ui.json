@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "about": "О себе",
+    "experience": "Опыт",
+    "work": "Работы",
+    "blog": "Блог",
+    "contact": "Контакт"
+  },
+  "buttons": {
+    "downloadCv": "CV",
+    "source": "Источник",
+    "live": "Live",
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "language": "Language"
+  },
+  "skills": {
+    "heading": "Навыки",
+    "subtitle": "Навыки, инструменты и технологии, в которых я действительно сильна:"
+  },
+  "footer": {
+    "rights": "Все права защищены."
+  },
+  "blog": {
+    "metaTitle": "Блог | xurjumon",
+    "metaDescription": "Делюсь мыслями, учебными материалами и наблюдениями из моего опыта разработки."
+  }
+}

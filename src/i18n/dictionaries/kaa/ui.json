@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "about": "Haqimda",
+    "experience": "Tájiriybe",
+    "work": "Jumıslarım",
+    "blog": "Blog",
+    "contact": "Baylanıs"
+  },
+  "buttons": {
+    "downloadCv": "CV",
+    "source": "Derek",
+    "live": "Live",
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "language": "Til"
+  },
+  "skills": {
+    "heading": "Kónlikpeler",
+    "subtitle": "Men haqıyqattan da jaqsı bolǵan kónlikpeler, ásbap-úskeneler hám texnologiyalar:"
+  },
+  "footer": {
+    "rights": "Barlıq huqıqlar qorǵalan."
+  },
+  "blog": {
+    "metaTitle": "Blog | xurjumon",
+    "metaDescription": "Rawajlandırıw jolımdagi pikirler, qóllanbalar hám oy-pikirler menen bolısıp baraman."
+  }
+}
