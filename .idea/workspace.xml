@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="423b14fb-5225-4ef8-bd27-203d1b96ca88" name="Changes" comment="" />
+    <list default="true" id="423b14fb-5225-4ef8-bd27-203d1b96ca88" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -23,10 +29,11 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/Users/jumamuratovahurliman8/Projects/portfolio/public/images/projects",
+    "last_opened_file_path": "/Users/jumamuratovahurliman8/Projects/portfolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -39,11 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/images/projects" />
       <recent name="$PROJECT_DIR$/public/images/blog" />
       <recent name="$PROJECT_DIR$/public/images/blogs" />
       <recent name="$PROJECT_DIR$/public/docs" />
-      <recent name="$PROJECT_DIR$/src/i18n/dictionaries/kaa" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -81,7 +88,7 @@
       <workItem from="1773156779990" duration="9000" />
       <workItem from="1775083342650" duration="17000" />
       <workItem from="1776640811940" duration="22000" />
-      <workItem from="1778759491209" duration="35359000" />
+      <workItem from="1778759491209" duration="46528000" />
     </task>
     <servers />
   </component>
