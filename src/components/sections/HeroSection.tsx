@@ -53,7 +53,7 @@ export function HeroSection() {
               <div className="profile-ring absolute -inset-2 animate-spin-slow rounded-full opacity-70 blur-sm dark:opacity-60" />
               <div className="relative h-56 w-56 overflow-hidden rounded-full bg-amber-50 ring-4 ring-white md:h-72 md:w-72 dark:bg-gray-800 dark:ring-gray-950">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/profile/photo.jpg"
                   alt={`${about.firstName} ${about.lastName}`}
                   fill
                   className="object-cover"
