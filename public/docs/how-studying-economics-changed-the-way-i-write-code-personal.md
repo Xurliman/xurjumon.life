@@ -1,3 +1,12 @@
+---
+title: "Economics+IT?"
+excerpt: "How economics affected the way I code"
+coverImage: "/images/blog/fintech.png"
+author: "Khurli Jumamuratova"
+publishedAt: "2026-02-09"
+tags: ["Econ", "IT"]
+readingTime: "21 min read"
+---
 # How studying economics changed the way I write code
 
 There is a specific moment I keep thinking about. I was in my second year of university, halfway through a finance and financial-technology degree, and I had just taken my first real backend job. The team was small, the codebase was already big, and on my second week somebody asked me to add a field to a money calculation. I opened the file. The amount was a `float64`. I remember looking at it for a long time, the way you look at a sentence in a contract that you are pretty sure says something different from what the lawyer told you it said.

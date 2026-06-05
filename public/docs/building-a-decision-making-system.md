@@ -3,7 +3,7 @@ title: "How I refactored the decision making system of the CBS"
 excerpt: "A tour of how a balance ledger actually works in production — accounts, postings, end-of-day routines, and why the books stay trustworthy."
 coverImage: "/images/blog/decision-making-system.jpg"
 author: "Khurli Jumamuratova"
-publishedAt: "2026-05-17"
+publishedAt: "2026-03-28"
 tags: ["Graphs", "Banking", "Backend", "Go"]
 readingTime: "21 min read"
 ---

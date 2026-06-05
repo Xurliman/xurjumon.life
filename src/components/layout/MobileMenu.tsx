@@ -4,9 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "@/data/navigation";
-import { personalContact } from "@/data/personal";
 import { Download } from "lucide-react";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useLocale, useTranslation } from "@/hooks/useTranslation";
+import { getResumeDownloadName, getResumeUrl } from "@/lib/resume";
 import type { UiDict } from "@/types";
 
 export function MobileMenu({
@@ -18,6 +18,7 @@ export function MobileMenu({
 }) {
   const pathname = usePathname();
   const ui = useTranslation<UiDict>("ui");
+  const { locale } = useLocale();
 
   function resolveHref(href: string) {
     if (href.startsWith("#")) {
@@ -48,8 +49,8 @@ export function MobileMenu({
               </Link>
             ))}
             <a
-              href={personalContact.resumeUrl}
-              download
+              href={getResumeUrl(locale)}
+              download={getResumeDownloadName(locale)}
               onClick={onClose}
               className="mt-2 inline-flex items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-green-700 px-3 py-2.5 text-sm font-medium text-white transition-all hover:brightness-110"
             >

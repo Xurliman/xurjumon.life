@@ -3,7 +3,7 @@ title: "What double-entry actually means in production code"
 excerpt: "A tour of how a balance ledger actually works in production — accounts, postings, end-of-day routines, and why the books stay trustworthy."
 coverImage: "/images/blog/accounting.jpg"
 author: "Khurli Jumamuratova"
-publishedAt: "2026-05-17"
+publishedAt: "2026-03-03"
 tags: ["Banking", "Backend", "Go", "Postgres"]
 readingTime: "12 min read"
 ---

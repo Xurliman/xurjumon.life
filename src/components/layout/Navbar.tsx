@@ -8,9 +8,9 @@ import { Container } from "./Container";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { LanguageSelect } from "@/components/ui/LanguageSelect";
 import { navLinks } from "@/data/navigation";
-import { personalContact } from "@/data/personal";
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { useTranslation } from "@/hooks/useTranslation";
+import { useLocale, useTranslation } from "@/hooks/useTranslation";
+import { getResumeDownloadName, getResumeUrl } from "@/lib/resume";
 import type { AboutDict, UiDict } from "@/types";
 import { cn } from "@/lib/utils";
 import { MobileMenu } from "./MobileMenu";
@@ -25,6 +25,7 @@ export function Navbar() {
   const activeSection = useActiveSection(hashSectionIds);
   const ui = useTranslation<UiDict>("ui");
   const about = useTranslation<AboutDict>("about");
+  const { locale } = useLocale();
 
   function isActive(link: { href: string }) {
     if (link.href.startsWith("#")) {
@@ -67,8 +68,8 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <a
-              href={personalContact.resumeUrl}
-              download
+              href={getResumeUrl(locale)}
+              download={getResumeDownloadName(locale)}
               className="hidden items-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-green-700 px-3.5 py-2 text-sm font-medium text-white shadow-md shadow-amber-500/25 transition-all hover:shadow-lg hover:shadow-amber-500/35 hover:brightness-110 sm:inline-flex"
             >
               <Download size={14} />
