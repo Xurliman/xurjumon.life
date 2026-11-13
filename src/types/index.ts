@@ -41,7 +41,6 @@ export interface ProjectMeta {
 
 export interface Project extends ProjectMeta {
   title: string;
-  label?: string;
   role: string;
   description: string;
 }

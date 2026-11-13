@@ -66,9 +66,6 @@ export function ProjectCard({
             <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
               {project.title}
             </h3>
-            {project.label && (
-              <Badge className="mt-2 w-fit text-[11px]">{project.label}</Badge>
-            )}
             <p className="mt-1 text-sm font-semibold text-green-700 dark:text-amber-400">
               {project.role}
             </p>
