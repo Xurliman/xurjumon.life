@@ -19,12 +19,12 @@
     },
     "4": {
       "title": "Gopher Market",
-      "role": "Senior Backend Developer",
+      "role": "Course project — Yandex Practicum (Advanced Go Developer)",
       "description": "Go dasturlash tilida sof mikroservis arxitekturasi va moliyaviy hisob-kitoblar uchun aniq o'nlik arifmetika yordamida sodiqlik mukofotlari va buyurtma boshqaruvi platformasi ishlab chiqildi. Xatoliklarga chidamlilik bilan asinxron buyurtma qayta ishlash uchun vaqtga asoslangan ish jarayoni joriy etildi. To'liq observability stack (Prometheus, Grafana, ELK) PostgreSQL bilan birga, Nginx reverse proxy yordamida Docker Compose orqali boshqariladigan holda joylashtirildi."
     },
     "5": {
       "title": "Metrics Alert System",
-      "role": "Senior Backend Developer",
+      "role": "Course project — Yandex Practicum (Advanced Go Developer)",
       "description": "Ko'rsatkichlarni yig'ish va ogohlantirish uchun yuqori unumdor platforma ishlab chiqildi, ikki transportli arxitektura (REST + gRPC) va ko'p darajali xavfsizlik – RSA-OAEP shifrlash, HMAC-SHA256 imzolash hamda IP-asosidagi subtorma kirish nazorat ro'yxati bilan. Yuk ostida silliq ishlashni kengaytirish imkonini beruvchi, 30 dan ortiq ijro va tizim darajasidagi metrikalarni qo'llab-quvvatlaydigan sozlanadigan ishchi havzalaridan foydalangan holda parallel ma'lumotlarni qabul qilishni ishlab chiqdim. PostgreSQL va xotira ichidagi server tizimlaridan foydalangan holda moslashuvchan ma'lumotlar saqlash qatlamini joriy qildim, bu esa server tizimini uzilishlarsiz almashtirish imkonini beradi."
     },
     "6": {

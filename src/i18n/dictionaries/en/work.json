@@ -20,13 +20,13 @@
     "4": {
       "title": "Gopher Market",
       "label": "Course project – Yandex Practicum",
-      "role": "Senior Backend Developer - Yandex Praktikum",
+      "role": "Course project — Yandex Practicum (Advanced Go Developer)",
       "description": "Engineered a loyalty rewards and order management platform in Go with clean architecture and precise decimal arithmetic for financial calculations. Implemented Temporal-based workflow orchestration for async order processing with fault tolerance. Deployed a full observability stack (Prometheus, Grafana, ELK) alongside PostgreSQL, managed via Docker Compose with Nginx reverse proxy."
     },
     "5": {
       "title": "Metrics Alert System",
       "label": "Course project – Yandex Practicum",
-      "role": "Senior Backend Developer - Yandex Praktikum",
+      "role": "Course project — Yandex Practicum (Advanced Go Developer)",
       "description": "Engineered a high-throughput metrics collection and alerting platform with dual-transport architecture (REST + gRPC) and layered security — RSA-OAEP encryption, HMAC-SHA256 signing, and IP-based subnet ACL. Designed concurrent data ingestion with configurable worker pools supporting 30+ runtime and system-level metrics with graceful degradation under load. Implemented a flexible storage layer with PostgreSQL and in-memory backends enabling zero-downtime backend switching."
     },
     "6": {
