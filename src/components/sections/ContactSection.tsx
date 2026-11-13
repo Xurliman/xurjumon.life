@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { personalContact } from "@/data/personal";
 import { useTranslation } from "@/hooks/useTranslation";
 import type { ContactDict } from "@/types";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function ContactSection() {
   const data = useTranslation<ContactDict>("contact");
@@ -33,11 +33,6 @@ export function ContactSection() {
                 text={personalContact.email}
                 label={personalContact.email}
                 icon={<Mail size={24} className="text-amber-500" />}
-              />
-              <CopyButton
-                text={personalContact.phone}
-                label={personalContact.phone}
-                icon={<Phone size={24} className="text-green-600" />}
               />
             </div>
           </ScrollReveal>

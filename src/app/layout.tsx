@@ -19,10 +19,17 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const siteTitle = "Khurli Jumamuratova – Senior Backend Engineer (Go, Fintech)";
+const siteDescription =
+  "Senior backend engineer building core banking and lending systems in Go. 4+ years in fintech. Bologna, Italy – open to remote roles and contracts.";
+
 export const metadata: Metadata = {
-  title: "Khurli Jumamuratova | Backend Developer",
-  description:
-    "Backend developer specializing in Golang and PHP, creating cutting-edge digital solutions based in Bologna, Italy.",
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 type Dict = Record<string, unknown>;

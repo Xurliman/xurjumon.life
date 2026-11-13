@@ -1,6 +1,5 @@
 import type { SocialLink } from "@/types";
-import {SiGithub, SiInstagram, SiLinkedin, SiTelegram} from "react-icons/si";
-import { SiX } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiTelegram } from "react-icons/si";
 
 export const socials: SocialLink[] = [
   {
@@ -12,11 +11,6 @@ export const socials: SocialLink[] = [
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/khurliman-jumamuratova/",
     icon: SiLinkedin,
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com/xurjumon",
-    icon: SiInstagram,
   },
   {
     name: "Telegram",

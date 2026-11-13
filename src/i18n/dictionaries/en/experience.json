@@ -4,11 +4,12 @@
     "1": {
       "company": "'Renesans Mikromoliya Tashkiloti' JSC",
       "role": "Senior Backend Developer",
-      "dateRange": "August 2022 – Present",
+      "dateRange": "Aug 2022 – Present",
       "bullets": [
-        "Built a unified corporate portal that integrates multiple internal banking systems into a single interface",
-        "Optimized daily operations for 1,000+ employees across all departments",
-        "Automated credit issuance processes from application to approval",
+        "Built a core banking system in Go: loan lifecycle, double-entry accounting, KYC/AML integrations",
+        "Migrated ~40M transactions from MSSQL to PostgreSQL with a concurrent Go ETL engine",
+        "Built a unified corporate portal integrating multiple internal banking systems, streamlining daily operations for 1,000+ employees",
+        "Automated credit issuance from application to approval",
         "Developed file-sharing and document management modules"
       ]
     },

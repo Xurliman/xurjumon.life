@@ -69,7 +69,6 @@ export const projectsMeta: ProjectMeta[] = [
   {
     id: "4",
     imageUrl: "/images/projects/project-4.png",
-    githubUrl: "https://github.com/Xurliman/gopher-markt",
     techStack: [
       "Go",
       "Fiber",
@@ -123,9 +122,7 @@ export const projectsMeta: ProjectMeta[] = [
   },
   {
     id: "7",
-    imageUrl: "/images/projects/project-7.jpg",
-      liveUrl:"https://configurator.fantomstudio.uz/",
-      githubUrl:"https://github.com/Xurliman/interior-store-client",
+    imageUrl: "/images/projects/project-7.png",
     videoUrl: "/videos/project-7.mov",
     techStack: [
       "PHP",
@@ -145,7 +142,6 @@ export const projectsMeta: ProjectMeta[] = [
   {
     id: "8",
     imageUrl: "/images/projects/project-8.png",
-      githubUrl:"https://github.com/Xurliman/interior-store-server",
     techStack: [
       "PHP",
       "Laravel",

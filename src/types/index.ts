@@ -1,4 +1,5 @@
 import { type IconType } from "react-icons";
+import type { LucideIcon } from "lucide-react";
 
 export interface NavLink {
   key: "about" | "experience" | "work" | "blog" | "contact";
@@ -25,7 +26,7 @@ export interface ExperienceEntry extends ExperienceMeta {
 
 export interface Skill {
   name: string;
-  icon: IconType;
+  icon: IconType | LucideIcon;
 }
 
 export interface ProjectMeta {
@@ -40,6 +41,7 @@ export interface ProjectMeta {
 
 export interface Project extends ProjectMeta {
   title: string;
+  label?: string;
   role: string;
   description: string;
 }
@@ -62,7 +64,6 @@ export interface BlogPost extends BlogPostMeta {
 
 export interface PersonalContact {
   email: string;
-  phone: string;
   resumeUrl: string;
 }
 

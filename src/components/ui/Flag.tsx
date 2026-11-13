@@ -19,7 +19,6 @@ function Base({
       aria-label={title}
       className="overflow-hidden rounded-[3px] shadow-[0_0_0_1px_rgba(0,0,0,0.06)]"
     >
-      <title>{title}</title>
       {children}
     </svg>
   );
@@ -27,7 +26,7 @@ function Base({
 
 function FlagEn({ size }: { size?: number }) {
   return (
-    <Base title="United Kingdom" size={size}>
+    <Base title="English" size={size}>
       <rect width="30" height="20" fill="#012169" />
       <path d="M0,0 L30,20 M30,0 L0,20" stroke="#fff" strokeWidth="4" />
       <path
