@@ -13,6 +13,8 @@ import {
 import { getSection } from "@/i18n/server";
 import { experienceMeta } from "@/data/experience";
 import { projectsMeta } from "@/data/projects";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -96,6 +98,8 @@ export default async function RootLayout({
             {children}
           </LocaleProvider>
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
